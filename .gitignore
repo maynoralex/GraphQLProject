@@ -1,1 +1,41 @@
-/.vscode
+# Binaries for the project
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+*.pdb
+*.ilk
+*.meta
+*.obj
+*.lib
+*.ncb
+*.sdf
+*.cache
+*.aps
+*.bsc
+*.sbr
+*.res
+*.pch
+*.idb
+*.tdb
+*.vspx
+_UpgradeReport_Files/
+.vs/
+
+# NuGet packages
+packages/
+
+# Node.js modules (if applicable)
+node_modules/
+
+# Log files
+*.log
+
+# Temporary files
+*~
