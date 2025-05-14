@@ -1,0 +1,6 @@
+@GraphQLProject_HostAddress = http://localhost:5057/graphql
+
+GET {{GraphQLProject_HostAddress}}/graphql/
+Accept: application/json
+
+###
