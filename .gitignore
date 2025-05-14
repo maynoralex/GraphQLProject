@@ -39,3 +39,5 @@ node_modules/
 
 # Temporary files
 *~
+GraphQLProject/bin/Debug/net9.0/GraphQLProject.dll
+GraphQLProject/bin/Debug/net9.0/GraphQLProject.pdb
