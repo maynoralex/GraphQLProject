@@ -11,6 +11,8 @@ public class MenuType : ObjectGraphType<Menu>
         Field(x => x.Name);
         Field(x => x.Description);
         Field(x => x.Price);
+        Field(x => x.ImageUrl);
+        Field(x => x.CategoryId);
     }
 
 }
