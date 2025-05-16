@@ -9,14 +9,16 @@ public class GraphQLDbContext : DbContext
     {
 
     }
-
+    
+    public DbSet<Category> Categories { get; set; }
     public DbSet<Menu> Menus { get; set; }
-
+    public DbSet<Reservation> Reservations { get; set; }
+    
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
         modelBuilder.Entity<Menu>().HasData(
-            new Menu() { Id = 1, Name = "Classic Burger", Description="A juicy chicken burger with lettuce and cheese" , Price = 8.99},
+            new Menu() { Id = 1, Name = "Classic Burger", Description = "A juicy chicken burger with lettuce and cheese", Price = 8.99 },
             new Menu() { Id = 2, Name = "Margherita Pizza", Description = "Tomato, mozzarella, and basil pizza", Price = 10.50 },
             new Menu() { Id = 3, Name = "Grilled Chicken Salad", Description = "Fresh garden salad with grilled chicken", Price = 7.95 },
             new Menu() { Id = 4, Name = "Pasta Alfredo", Description = "Creamy Alfredo sauce with fettuccine pasta", Price = 12.75 },
