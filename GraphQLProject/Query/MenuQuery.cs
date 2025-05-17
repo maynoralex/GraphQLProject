@@ -14,7 +14,7 @@ public class MenuQuery : ObjectGraphType
             return menuRepository.GetAllMenu();
         });
 
-        Field<MenuType>("Menu").Arguments(new QueryArguments(new QueryArgument<IntGraphType> { Name = "menuId" })).Resolve( context =>
+        Field<MenuType>("Menu").Arguments(new QueryArguments(new QueryArgument<IntGraphType> { Name = "menuId" })).Resolve(context =>
         {
             return menuRepository.GetMenuById(context.GetArgument<int>("menuId"));
         });

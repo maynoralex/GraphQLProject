@@ -13,7 +13,7 @@ public class CategoryType : ObjectGraphType<Category>
         Field(x => x.ImageUrl);
         Field<ListGraphType<MenuType>>("Menus").Resolve(context =>
         {
-            return menuRepository.GetAllMenu();
+            return menuRepository.GetAllMenu().Where(m => m.CategoryId == context.Source.Id);
         });
     }
 }
