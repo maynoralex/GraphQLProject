@@ -13,7 +13,7 @@ public class ReservationInputType : InputObjectGraphType
         Field<StringGraphType>("phoneNumber");
         Field<IntGraphType>("partySize");
         Field<StringGraphType>("specialRequest");
-        Field<DateTimeGraphType>("reservationDate");
+        Field<DateGraphType>("reservationDate");
     }
 
 }
